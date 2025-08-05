@@ -1,0 +1,30 @@
+{
+  "name": "teamup-video-platform",
+  "version": "1.0.0",
+  "description": "A minimalist, beautiful front-end website designed to showcase embedded Vimeo videos with TeamUp brand identity",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "npx serve .",
+    "dev": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "video",
+    "vimeo",
+    "frontend",
+    "teamup",
+    "coaching"
+  ],
+  "author": "TeamUp Development Team",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teamup/video-platform.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 

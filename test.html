@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamUp Video Platform - Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="video-container">
+        <header class="video-header">
+            <h1 class="video-title">TeamUp Video Platform - Test</h1>
+            <p style="font-family: var(--font-body); margin-top: var(--spacing-sm); opacity: 0.8;">
+                Testing with a sample Vimeo video
+            </p>
+        </header>
+        
+        <section class="video-player-section">
+            <div class="video-wrapper">
+                <!-- This will be replaced by the actual Vimeo embed -->
+                <div class="video-placeholder">
+                    <div class="placeholder-content">
+                        <div class="placeholder-icon">▶</div>
+                        <p class="placeholder-text">Loading Test Video</p>
+                        <p class="placeholder-subtext">Vimeo embed will load here</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="video-footer">
+            <a href="index.html" class="back-button">
+                Back to Main Page
+            </a>
+        </footer>
+    </main>
+
+    <script>
+        // Override the default video ID for testing
+        document.addEventListener('DOMContentLoaded', function() {
+            // Use a sample Vimeo video ID for testing
+            const testVideoId = '148751763'; // Sample video ID
+            
+            // Update the config
+            if (window.config) {
+                window.config.defaultVideoId = testVideoId;
+            }
+        });
+    </script>
+</body>
+</html> 

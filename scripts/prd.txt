@@ -1,0 +1,68 @@
+<context>
+# Overview  
+A minimalist, beautiful front-end website designed to showcase embedded Vimeo videos with a clean, professional aesthetic. The site serves as a video presentation platform that maintains the TeamUp brand identity while providing an elegant viewing experience. The initial version will feature hard-coded Vimeo links with a simple, centered video player and navigation back to the main coaching platform.
+
+# Core Features  
+- **Video Embedding System**: Clean, centered Vimeo video player that maintains aspect ratio and doesn't overwhelm the page
+- **Brand-Consistent Design**: Complete adherence to TeamUp design system with proper typography, colors, and spacing
+- **Responsive Layout**: Single-column, minimalist design that works across different screen sizes
+- **Navigation Integration**: "Back to Coaching.com" button for seamless return to main platform
+- **Professional Presentation**: High-quality video display with proper spacing and visual hierarchy
+
+# User Experience  
+- **Primary User**: Coaching platform users who need to view embedded videos
+- **User Journey**: Arrive at video page → view centered video content → return to main platform
+- **UI/UX Focus**: Clean, distraction-free viewing experience with clear navigation
+- **Visual Hierarchy**: Video as primary focus, minimal supporting elements
+</context>
+<PRD>
+# Technical Architecture  
+- **Frontend Framework**: Modern web technologies (HTML5, CSS3, JavaScript)
+- **Video Integration**: Vimeo embed API with responsive iframe implementation
+- **Design System**: Complete implementation of TeamUp brand guidelines from brand.json
+- **Layout System**: CSS Grid/Flexbox for centered, responsive video positioning
+- **Typography**: Montserrat, Columbia-Serial, and Avenir font families as specified
+- **Color Implementation**: Exact color palette from brand.json (#e6eff1 background, #040335 text, etc.)
+
+# Development Roadmap  
+## Phase 1: MVP Foundation
+- Basic HTML structure with proper semantic markup
+- CSS implementation of TeamUp design system (colors, typography, spacing)
+- Responsive layout framework with centered video positioning
+- Hard-coded Vimeo embed with proper aspect ratio handling
+- "Back to Coaching.com" button with brand-consistent styling
+- Mobile-responsive design testing
+
+## Phase 2: Enhanced User Experience
+- Smooth transitions and hover effects for interactive elements
+- Loading states for video player
+- Error handling for video embed failures
+- Accessibility improvements (ARIA labels, keyboard navigation)
+- Performance optimization for video loading
+
+## Phase 3: Backend Integration (Future)
+- Database schema for video link storage
+- Admin interface for adding/editing video links
+- Dynamic video loading from backend
+- Video metadata management (titles, descriptions, categories)
+
+# Logical Dependency Chain
+1. **Design System Implementation** (Foundation): Must establish brand-consistent styling first
+2. **Basic Layout Structure**: Create responsive grid system and centered video positioning
+3. **Video Embed Integration**: Implement Vimeo embed with proper responsive behavior
+4. **Navigation System**: Add "Back to Coaching.com" button with proper styling
+5. **Responsive Testing**: Ensure all elements work across different screen sizes
+6. **Polish and Refinement**: Add subtle animations and final design touches
+
+# Risks and Mitigations  
+- **Video Loading Performance**: Implement lazy loading and proper error states
+- **Responsive Video Behavior**: Use CSS aspect-ratio and viewport units for consistent sizing
+- **Brand Consistency**: Strict adherence to brand.json specifications with design review
+- **Browser Compatibility**: Test across major browsers and implement fallbacks
+- **Future Backend Integration**: Design frontend architecture to easily accommodate dynamic content
+
+# Appendix  
+- **Brand Guidelines**: Complete implementation of TeamUp design system from brand.json
+- **Video Embed Best Practices**: Vimeo embed API documentation and responsive design patterns
+- **Accessibility Standards**: WCAG 2.1 AA compliance for inclusive design
+- **Performance Targets**: Sub-2-second page load times with optimized video loading 

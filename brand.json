@@ -1,0 +1,76 @@
+{
+    "designSystemProfile": {
+      "name": "TeamUp Pitch Deck",
+      "description": "A design system profile based on the TeamUp pitch deck for consistent, AI-driven design replication.",
+      "style": {
+        "overall": "Modern, clean, and professional with a friendly and approachable feel. The design uses a mix of photographic elements, illustrative icons, and clean typography to create a sense of trust and collaboration.",
+        "colorPalette": {
+          "background": "#e6eff1",
+          "text": "#040335",
+          "primary": "#075f74",
+          "secondary": "#679485",
+          "accentRed": "#ed4d35",
+          "accentOrange": "#ee9a22",
+          "accentLight": "#d4eee5"
+        },
+        "typography": {
+          "heading": {
+            "fontFamily": "Montserrat, sans-serif",
+            "fontWeight": "bold",
+            "fontSize": "24-32pt",
+            "color": "#040335"
+          },
+          "subheading": {
+            "fontFamily": "Columbia-Serial, sans-serif",
+            "fontWeight": "bold",
+            "fontSize": "16-20pt",
+            "color": "#040335"
+          },
+          "body": {
+            "fontFamily": "Avenir, sans-serif",
+            "fontWeight": "normal",
+            "fontSize": "12-14pt",
+            "color": "#040335"
+          }
+        }
+      },
+      "structure": {
+        "layout": {
+          "grid": "A flexible grid system is used to align elements and create a sense of order. The layout is typically single-column, with a clear visual hierarchy.",
+          "spacing": "Generous use of white space to improve readability and focus. Consistent margins and padding are used throughout the document.",
+          "alignment": "Left-aligned text is standard for body copy, while headings are often centered for emphasis."
+        },
+        "components": {
+          "buttons": {
+            "style": "Subtle, with a solid color fill and rounded corners. No strong shadows or gradients.",
+            "text": "Uppercase, bold, and centered within the button."
+          },
+          "lists": {
+            "style": "Bulleted or numbered lists are used to break up text and improve scannability.",
+            "iconography": "Simple, line-based icons are used to add visual interest and clarify meaning."
+          },
+          "images": {
+            "style": "High-quality, professional photographs of people are used to create a human connection. Images are often cropped into circles or other shapes to add visual interest.",
+            "treatment": "Images are used as background elements or as standalone visuals. They are often overlaid with text or other design elements."
+          }
+        }
+      },
+      "replicationGuidelines": {
+        "toneAndVoice": "The tone should be professional yet approachable, inspiring confidence and trust.",
+        "dos": [
+          "Use the defined color palette consistently.",
+          "Maintain a clear visual hierarchy.",
+          "Use high-quality images and icons.",
+          "Ensure generous use of white space."
+        ]
+        ,
+        "donts": [
+          "Do not use overly decorative fonts.",
+          "Avoid cluttered layouts.",
+          "Do not use low-quality or pixelated images.",
+          "Avoid inconsistent spacing and alignment."
+        ]
+      }
+    }
+  }
+  
