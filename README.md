@@ -4,10 +4,12 @@ A minimalist, beautiful front-end website designed to showcase embedded Vimeo vi
 
 ## 🎯 Features
 
+- **Video Library**: Browse all videos with thumbnail cards, categories, and filtering
+- **Individual Watch Pages**: Dedicated pages for each video with unique URLs
 - **Video Embedding System**: Clean, centered Vimeo video player that maintains aspect ratio
 - **Brand-Consistent Design**: Complete adherence to TeamUp design system with proper typography, colors, and spacing
 - **Responsive Layout**: Single-column, minimalist design that works across different screen sizes
-- **Navigation Integration**: "Back to Coaching.com" button for seamless return to main platform
+- **Navigation Integration**: Seamless navigation between library, watch pages, and main platform
 - **Professional Presentation**: High-quality video display with proper spacing and visual hierarchy
 
 ## 🚀 Getting Started
@@ -42,9 +44,16 @@ Then open your browser and navigate to `http://localhost:8000`
 
 ```
 video-frontend/
-├── index.html          # Main HTML file
+├── index.html          # Main landing page
+├── library.html        # Video library page
+├── watch.html          # Individual video watch page
 ├── styles.css          # TeamUp design system implementation
-├── script.js           # JavaScript functionality
+├── library.css         # Library page specific styles
+├── watch.css           # Watch page specific styles
+├── script.js           # Main page JavaScript
+├── library.js          # Library page JavaScript
+├── watch.js            # Watch page JavaScript
+├── videos.json         # Video database and metadata
 ├── brand.json          # TeamUp brand guidelines
 ├── README.md           # This file
 └── scripts/
@@ -73,21 +82,27 @@ The project implements the complete TeamUp design system as specified in `brand.
 
 ### Video Configuration
 
-To change the default video, edit the `config` object in `script.js`:
+Videos are managed through the `videos.json` file. Each video entry includes:
 
-```javascript
-const config = {
-    defaultVideoId: 'YOUR_VIMEO_VIDEO_ID', // Replace with actual Vimeo video ID
-    embedParams: {
-        autoplay: 0,
-        color: '075f74', // TeamUp primary color
-        title: 0,
-        byline: 0,
-        portrait: 0,
-        responsive: 1
-    }
-};
+```json
+{
+  "id": "1071247322",
+  "title": "Introduction to TeamUp",
+  "description": "Learn the basics of the TeamUp platform...",
+  "duration": "5:32",
+  "thumbnail": "https://i.vimeocdn.com/video/1071247322_640x360.jpg",
+  "category": "Getting Started",
+  "order": 1
+}
 ```
+
+### Adding New Videos
+
+1. Add a new entry to `videos.json` in the `videos` array
+2. Ensure the Vimeo video ID is correct
+3. Add a thumbnail URL (Vimeo provides these automatically)
+4. Categorize the video appropriately
+5. Set the order for display sequence
 
 ### Vimeo Video ID
 
@@ -123,14 +138,25 @@ The platform includes several accessibility features:
 - [x] "Back to Coaching.com" button with brand-consistent styling
 - [x] Mobile-responsive design testing
 
-### Phase 2: Enhanced User Experience (Future)
+### Phase 2: Video Library & Watch Pages ✅
+- [x] Video library page with grid layout and filtering
+- [x] Individual watch pages with unique URLs
+- [x] Video metadata display (title, description, duration, category)
+- [x] Navigation between library and watch pages
+- [x] Video database structure (videos.json)
+- [x] Category filtering system
+- [x] Previous/Next video navigation
+- [x] Breadcrumb navigation
+- [x] Responsive video cards and layout
+
+### Phase 3: Enhanced User Experience (Future)
 - [ ] Smooth transitions and hover effects
 - [ ] Loading states for video player
 - [ ] Error handling for video embed failures
 - [ ] Accessibility improvements
 - [ ] Performance optimization
 
-### Phase 3: Backend Integration (Future)
+### Phase 4: Backend Integration (Future)
 - [ ] Database schema for video link storage
 - [ ] Admin interface for adding/editing video links
 - [ ] Dynamic video loading from backend
@@ -140,15 +166,21 @@ The platform includes several accessibility features:
 
 ### Adding Multiple Videos
 
-To support multiple videos, you can:
+The platform now supports multiple videos through the `videos.json` file:
 
-1. **URL Parameters**: Modify the JavaScript to read video IDs from URL parameters
-2. **Data Attributes**: Add video IDs as data attributes to HTML elements
-3. **Configuration File**: Create a separate JSON file with video configurations
+1. **Video Database**: Add new videos to `videos.json`
+2. **Categories**: Organize videos by category for easy filtering
+3. **Metadata**: Include titles, descriptions, durations, and thumbnails
+4. **Ordering**: Control the display order of videos
 
 ### Styling Customization
 
-All styling is done through CSS custom properties (variables) in `styles.css`. You can easily modify:
+All styling is done through CSS custom properties (variables) in the respective CSS files:
+- `styles.css` - Main design system and shared styles
+- `library.css` - Library page specific styles
+- `watch.css` - Watch page specific styles
+
+You can easily modify:
 - Colors in the `:root` section
 - Spacing values
 - Typography settings
@@ -157,10 +189,22 @@ All styling is done through CSS custom properties (variables) in `styles.css`. Y
 ## 🐛 Troubleshooting
 
 ### Video Not Loading
-1. Check that the Vimeo video ID is correct
+1. Check that the Vimeo video ID is correct in `videos.json`
 2. Ensure the video is publicly accessible
 3. Check browser console for JavaScript errors
 4. Verify internet connection
+
+### Library Page Issues
+1. Ensure `videos.json` is properly formatted
+2. Check that all video IDs are valid
+3. Verify thumbnail URLs are accessible
+4. Test category filtering functionality
+
+### Watch Page Issues
+1. Check URL parameters are correct (e.g., `watch.html?id=123`)
+2. Verify video exists in `videos.json`
+3. Test navigation between videos
+4. Check browser console for errors
 
 ### Styling Issues
 1. Clear browser cache
@@ -186,6 +230,7 @@ When contributing to this project:
 3. Test across different devices and browsers
 4. Update documentation as needed
 5. Ensure accessibility standards are met
+6. Test video library and watch page functionality
 
 ## 📞 Support
 

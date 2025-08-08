@@ -1,0 +1,34 @@
+{
+  "videos": [
+    {
+      "id": "1108388052",
+      "title": "1: Welcome to Team Up",
+      "description": "Intro to the Team Up programme and how it can transform your team.",
+      "duration": "5:32",
+      "thumbnail": "https://i.vimeocdn.com/video/1108388052_640x360.jpg",
+      "category": "Getting Started",
+      "order": 1
+    },
+    {
+      "id": "669738708",
+      "title": "2: What is Team Up?",
+      "description": "What is Team Up and how it can transform your team.",
+      "duration": "5:31",
+      "thumbnail": "https://i.vimeocdn.com/video/669738708_640x360.jpg",
+      "category": "Getting Started",
+      "order": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": "getting-started",
+      "name": "Getting Started",
+      "description": "Essential videos to get you up and running with TeamUp"
+    },
+    {
+      "id": "program-creation",
+      "name": "Program Creation",
+      "description": "Learn how to create effective coaching programs"
+    }
+  ]
+}

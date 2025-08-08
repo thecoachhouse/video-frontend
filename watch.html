@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Video - TeamUp</title>
+    <link rel="stylesheet" href="styles.css?v=8">
+    <link rel="stylesheet" href="watch.css?v=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="watch.js" defer></script>
+</head>
+<body>
+    <main class="watch-container">
+        <header class="watch-header">
+            <nav class="breadcrumb-nav">
+                <a href="library.html" class="breadcrumb-link">← Back to Library</a>
+            </nav>
+            <h1 class="video-title" id="videoTitle">Loading...</h1>
+            <p class="video-description" id="videoDescription">Loading description...</p>
+        </header>
+        
+        <section class="video-player-section">
+            <div class="video-wrapper">
+                <div class="video-placeholder">
+                    <div class="placeholder-content">
+                        <div class="loading-spinner"></div>
+                        <p>Loading video...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="navigation-section">
+            <div class="video-navigation">
+                <button class="nav-button prev-button" id="prevButton" disabled>
+                    ← Previous Video
+                </button>
+                <button class="nav-button next-button" id="nextButton" disabled>
+                    Next Video →
+                </button>
+            </div>
+        </section>
+        
+        <footer class="watch-footer">
+            <a href="https://coaching.com" class="back-button" target="_blank" rel="noopener">
+                Back to Coaching.com
+            </a>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Library - TeamUp</title>
+    <link rel="stylesheet" href="styles.css?v=8">
+    <link rel="stylesheet" href="library.css?v=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="library.js" defer></script>
+</head>
+<body>
+    <main class="library-container">
+        <header class="library-header">
+            <h1 class="library-title">Video Library</h1>
+            <p class="library-subtitle">Explore our comprehensive collection of TeamUp tutorials and guides</p>
+        </header>
+        
+        <section class="videos-grid" id="videosGrid">
+            <!-- Video cards will be dynamically loaded here -->
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Loading videos...</p>
+            </div>
+        </section>
+        
+        <footer class="library-footer">
+            <a href="https://coaching.com" class="back-button" target="_blank" rel="noopener">
+                Back to Coaching.com
+            </a>
+        </footer>
+    </main>
+</body>
+</html>
